@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You Sister ❤️</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+        text-align: center;
+        padding: 50px;
+        color: #333;
+    }
+
+    .container{
+        background: white;
+        max-width: 700px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    h1{
+        color: #e91e63;
+    }
+
+    .message{
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    button{
+        background: #e91e63;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: 0.3s;
+    }
+
+    button:hover{
+        transform: scale(1.1);
+        background: #c2185b;
+    }
+
+    #surprise{
+        display: none;
+        margin-top: 25px;
+        font-size: 20px;
+        color: #4caf50;
+        animation: fadeIn 1s;
+    }
+
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .heart{
+        font-size: 40px;
+        animation: beat 1s infinite;
+    }
+
+    @keyframes beat{
+        0%{transform: scale(1);}
+        50%{transform: scale(1.2);}
+        100%{transform: scale(1);}
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="heart">❤️</div>
+
+    <h1>Thank You, Sis!</h1>
+
+    <p class="message">
+        Dear Sister,<br><br>
+        Thank you for always being there for me, for your support,
+        encouragement, advice, and for all the little things you do that
+        often go unnoticed. You make life brighter and I am grateful to
+        have you as my sister.
+        <br><br>
+        This small page is just a reminder that you are appreciated more
+        than words can express.
+    </p>
+
+    <button onclick="showSurprise()">
+        Click For A Surprise 🎁
+    </button>
+
+    <div id="surprise">
+        🌟 You are the Best Sister Ever! 🌟<br><br>
+        Thank you for being my friend, my supporter, and my family. ❤️
+    </div>
+</div>
+
+<script>
+function showSurprise(){
+    document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</body>
+</html>
